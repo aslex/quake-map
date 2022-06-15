@@ -1,0 +1,42 @@
+.marker{
+    background-color: white;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+@keyframes twinkle {
+    0%{
+        width: 4px;
+        height: 4px;
+    }
+    50%{
+        width: 8px;
+        height: 8px;
+    }
+    100%{
+        width: 4px;
+        height: 4px;
+    }
+}
+
+.light{
+    background-color: yellow;
+    /* animation-name: twinkle; */
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.medium{
+    background-color: orange;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+}
+
+.intense{
+    background-color: red;
+    width: 18px;
+    height: 18px;
+    z-index: 2;
+}

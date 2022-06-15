@@ -1,11 +1,20 @@
+import { useEffect, useState } from "react";
 import "./App.css";
-import { Map } from "./components/Map";
+import { MapContext, createMap } from "./Context/Map";
+import { Main } from "./components/Main";
 
 function App() {
+  const [map, setMap] = useState();
+
+  useEffect(() => {
+    const map = createMap();
+    setMap(map);
+  }, []);
+
   return (
-    <div className="App">
-      <Map />
-    </div>
+    <MapContext.Provider value={map}>
+      <Main />
+    </MapContext.Provider>
   );
 }
 
