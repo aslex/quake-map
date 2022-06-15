@@ -1,6 +1,6 @@
 # Earthquake Visualization
 
-This small project visualizes data from [the USGS free API](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) by displaying the locations of seismic activity. The color indicated magnitude with yellow being the smallest and red the largest.
+This small project visualizes 7-day earthquake data from [the USGS free API](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) by displaying the locations of seismic activity. The color indicated magnitude with yellow being the smallest and red the largest.
 
 ![](public/app-image.png)
 
